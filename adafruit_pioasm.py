@@ -63,7 +63,7 @@ class Program:  # pylint: disable=too-few-public-methods
                 if program_name:
                     raise RuntimeError("Multiple programs not supported")
                 program_name = line.split()[1]
-            elif line.startswith(".origin"):
+            elif line.startswith(".offset"):
                 offset = int(line.split()[1], 0)
             elif line.startswith(".wrap_target"):
                 wrap_target = len(instructions)
